@@ -44,5 +44,5 @@
 
 - [Rules]()
 - [Log - click here to see my progress](log.md)
-- [FAQ](./Log.md)
-- [Resources](./resources.md)
+- [FAQ](FAQ.md)
+- [Resources](resources.md)
