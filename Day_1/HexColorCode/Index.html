@@ -38,7 +38,7 @@
   const hexCodeGenerator = () => {
     let hexKey = "#";
     for (let i = 0; i < 6; i++) {
-      let index = Math.floor(Math.random() * 10);// generating random index value
+      let index = Math.floor(Math.random() * hexArray.length);// generating random index value
       hexKey = hexKey + hexArray[index];
     }
 
