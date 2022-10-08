@@ -42,7 +42,7 @@
 
 ## Contents
 
-- [Rules](rules.md)
+- [Rules]()
 - [Log - click here to see my progress](log.md)
-- [FAQ](FAQ.md)
-- [Resources](resources.md)
+- [FAQ](./Log.md)
+- [Resources](./resources.md)
