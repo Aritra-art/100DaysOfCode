@@ -12,4 +12,7 @@ I would start doing the challenge with JavaScript. Would do some logic based que
 
 ### Link to Work:
 
+1. Solved some Logic based questions especially related to numbers, arrays and objects.
+2. Created a GUI for a [HexColorCodeGenerator](https://hexgeneratorbyaritra.netlify.app/)
+
 [DAY_1](./Day_1)
