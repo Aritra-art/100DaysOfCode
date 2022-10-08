@@ -2,7 +2,7 @@
 
 **A simple website which generates random background color on clicking of a button. The user can also copy the generated Hex color code**
 
-[CheckItOut😎]()
+[CheckItOut😎](https://hexgeneratorbyaritra.netlify.app/)
 
 ## TechStack Used:
 
