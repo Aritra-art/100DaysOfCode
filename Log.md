@@ -12,4 +12,4 @@ I would start doing the challenge with JavaScript. Would do some logic based que
 
 ### Link to Work:
 
-[DAY_1]()
+[DAY_1](./Day_1)
