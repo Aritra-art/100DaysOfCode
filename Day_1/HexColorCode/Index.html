@@ -36,7 +36,14 @@
   currentHex.textContent = "#ffc0cb"; // setting the current bg color
 
   const hexCodeGenerator = () => {
-    console.log(hexArray);
+    let hexKey = "#";
+    for (let i = 0; i < 6; i++) {
+      let index = Math.floor(Math.random() * 10);// generating random index value
+      hexKey = hexKey + hexArray[index];
+    }
+
+    body.style.backgroundColor = hexKey;
+    currentHex.textContent = hexKey;
   }
 
   clickBtn.addEventListener('click', hexCodeGenerator);
