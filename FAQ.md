@@ -39,6 +39,6 @@ Don't worry whether you get a point on GitHub on that particular day. Yes, it’
 ## Contents
 
 - [Rules](rules.md)
-- [Log - click here to see my progress](log.md)
+- [Log - click here to see my progress](Log.md)
 - [FAQ](FAQ.md)
 - [Resources](resources.md)
