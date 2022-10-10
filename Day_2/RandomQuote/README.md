@@ -4,7 +4,7 @@
 
 ![GUI Image](./img.jpg)
 
-[GenerateRandomQuote]()
+[GenerateRandomQuote](https://randomquotebyaritra.netlify.app/)
 
 ## TechStack Used
 
