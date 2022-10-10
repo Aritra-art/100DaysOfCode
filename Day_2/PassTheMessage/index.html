@@ -31,7 +31,7 @@
       error.textContent = "";
       latestMsg.textContent = textInput.value;
       msgArray.push(textInput.value);
-      if (msgArray.length > 10) {
+      if (msgArray.length >= 10) {
         for (let i = 0; i < 5; i++) {
           msgArray.shift(i);
         }
