@@ -46,9 +46,9 @@
 
     for (let i = msgArray.length - 1; i >= end; i--) {
       strList += `<li style="text-align:center;border: 2px solid #0284c7;padding: 1rem;
-      margin: 1rem 0rem;font-size: 1.5rem;border-radius: 1rem;background-color: #e5e7eb;opacity: 0.6;font-weight: bold;color: black;">${msgArray[i]}</li>`
+      margin: 1rem 0rem;font-size: 1.5rem;border-radius: 1rem;background-color: #e5e7eb;opacity: 0.6;font-weight: bold;color: black;">${msgArray[i]}</li>` // updating the string
     }
-    recentList.innerHTML = strList;
+    recentList.innerHTML = strList; //adding the total string inside the unordered list
   }
   const submitEventHandler = () => {
     if (textInput.value.length > 0) { // checking whether user enter any msg or not
