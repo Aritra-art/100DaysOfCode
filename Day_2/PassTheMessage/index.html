@@ -14,9 +14,30 @@
     <p class="mainHeading">A Message you would like to pass ❤️</p>
     <input type="text" class="textInput" placeholder="please enter your message here">
     <button id="submitBtn">Submit</button>
+    <p class="error"></p>
     <p class="msgHeading">Last Message Delivered 👇</p>
-    <p class="latestMsg">Hello World</p>
+    <p class="latestMsg"></p>
   </div>
 </body>
+<script>
+  const textInput = document.querySelector(".textInput");
+  const submitBtn = document.querySelector("#submitBtn");
+  const latestMsg = document.querySelector(".latestMsg");
+  const error = document.querySelector(".error");
+  error.textContent = "";
+  const msgArray = [];
+  const submitEventHandler = () => {
+    if (textInput.value.length > 0) {
+      error.textContent = "";
+      latestMsg.textContent = textInput.value;
+      msgArray.push(textInput.value);
+    } else {
+      error.textContent = "Please enter a Message !!"
+    }
+  }
+
+  submitBtn.addEventListener("click", submitEventHandler);
+
+</script>
 
 </html>
