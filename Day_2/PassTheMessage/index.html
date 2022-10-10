@@ -10,13 +10,20 @@
 </head>
 
 <body>
-  <div class="main">
-    <p class="mainHeading">A Message you would like to pass ❤️</p>
-    <input type="text" class="textInput" placeholder="please enter your message here">
-    <button id="submitBtn">Submit</button>
-    <p class="error"></p>
-    <p class="msgHeading">Last Message Delivered 👇</p>
-    <p class="latestMsg"></p>
+  <div>
+    <div class="main">
+      <p class="mainHeading">A Message you would like to pass ❤️</p>
+      <input type="text" class="textInput" placeholder="please enter your message here">
+      <button id="submitBtn">Submit</button>
+      <p class="error"></p>
+      <p class="msgHeading">Last Message Delivered 👇</p>
+      <p class="latestMsg"></p>
+    </div>
+    <div class="main">
+      <p class="mainHeading">Recent Messages 👇</p>
+      <ul class="recentList">
+      </ul>
+    </div>
   </div>
 </body>
 <script>
@@ -25,20 +32,38 @@
   const latestMsg = document.querySelector(".latestMsg");
   const error = document.querySelector(".error");
   error.textContent = "";
+  const recentList = document.querySelector(".recentList")
   const msgArray = [];
+
+  const recentMsgHandler = () => {
+    let end = 0;
+    if (msgArray.length > 5) {
+      end = msgArray.length - 5;
+    } else {
+      end = 0;
+    }
+    let strList = "" // storing the ListItems inside a string
+
+    for (let i = msgArray.length - 1; i >= end; i--) {
+      strList += `<li style="text-align:center;border: 2px solid #0284c7;padding: 1rem;
+      margin: 1rem 0rem;font-size: 1.5rem;border-radius: 1rem;background-color: #e5e7eb;opacity: 0.6;font-weight: bold;color: black;">${msgArray[i]}</li>`
+    }
+    recentList.innerHTML = strList;
+  }
   const submitEventHandler = () => {
-    if (textInput.value.length > 0) {
+    if (textInput.value.length > 0) { // checking whether user enter any msg or not
       error.textContent = "";
       latestMsg.textContent = textInput.value;
-      msgArray.push(textInput.value);
+      msgArray.push(textInput.value); //pushing the msg inside the array
       if (msgArray.length >= 10) {
         for (let i = 0; i < 5; i++) {
-          msgArray.shift(i);
+          msgArray.shift(i); // cleaning the db if it's greater than 10 elements
         }
       }
-      console.log(msgArray);
+      recentMsgHandler();
+
     } else {
-      error.textContent = "Please enter a Message !!"
+      error.textContent = "Please enter a Message !!" // setting the error msg
     }
   }
 
