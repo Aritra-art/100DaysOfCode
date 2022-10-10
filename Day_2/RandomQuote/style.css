@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: antiquewhite;
+}
+
+.main {
+  margin-top: 4rem;
+  height: 20rem;
+  background-color: darksalmon;
+  width: 45rem;
+  border-radius: 1rem;
+  padding: 4rem;
+  border: 1rem solid brown;
+}
+
+#generate {
+  display: flex;
+  margin: auto;
+  cursor: pointer;
+  padding: 1.4rem;
+  border-radius: 1rem;
+  border: 2px solid orange;
+  background-color: white;
+  font-size: 1.4rem;
+  color: orange;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  transition: 400ms ease-in-out;
+
+}
+
+#generate:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: orange;
+  color: white;
+}
+
+.mainQuote {
+  margin-top: 3rem;
+  font-size: 2rem;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
+}
+
+.mainName {
+  text-align: right;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-style: italic;
+}
