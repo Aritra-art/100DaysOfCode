@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bae6fd;
+}
+
+.main {
+  margin-top: 4rem;
+  width: 50rem;
+  height: 25rem;
+  padding: 3rem;
+  border-radius: 1rem;
+  border: 4px solid #0284c7;
+  background-color: #38bdf8;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainHeading {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.textInput {
+  height: 1.5rem;
+  font-size: 1rem;
+  padding: 1rem;
+  outline: none;
+  border: 3px solid #0284c7;
+  margin: 1rem 0rem;
+  margin-bottom: 2.5rem;
+  border-radius: 0.5rem;
+}
+
+#submitBtn {
+  display: flex;
+  margin: auto;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 2px solid #0284c7;
+  background-color: white;
+  font-size: 1rem;
+  color: #0284c7;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  transition: 400ms ease-in-out;
+}
+
+#submitBtn:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #0284c7;
+  color: white;
+}
+
+.msgHeading {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.latestMsg {
+  text-align: center;
+  margin-top: 0rem;
+  font-size: 1.5rem;
+  color: #0c4a6e;
+  font-weight: bold;
+}
